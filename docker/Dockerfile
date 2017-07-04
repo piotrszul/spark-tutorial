@@ -31,9 +31,6 @@ RUN conda create --yes -p $CONDA_DIR/envs/python2 python=2.7 \
     'pil' \
     && conda clean -yt
 
-RUN $CONDA_DIR/envs/python2/bin/python \
-    $CONDA_DIR/envs/python2/bin/ipython \
-    kernelspec install-self --user
 
 #Prepare environment
 ENV SPARK_HOME /usr/local/spark
@@ -45,8 +42,11 @@ ENV PYSPARK_DRIVER_PYTHON_OPTS="notebook --no-browser"
 #COPY data $HOME/work/data/
 #COPY 00_welcome.ipynb $HOME/work/
 
-USER root
+# Install pyspark kernel
+COPY pyspark /tmp/pyspark/
+RUN $CONDA_DIR/envs/python2/bin/jupyter kernelspec install /tmp/pyspark/ --user
 
+USER root
 #COPY and ADD don't add as the current user https://github.com/docker/docker/issues/7390, https://github.com/docker/docker/pull/13600
 RUN chown jovyan:jovyan $HOME/work -R
 
