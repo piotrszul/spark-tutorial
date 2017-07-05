@@ -4,7 +4,10 @@ derby.log
 metastore_db
 .ipynb_checkpoints
 
+#Misc
 set-env.sh
+output
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
