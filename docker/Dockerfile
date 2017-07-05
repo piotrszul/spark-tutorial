@@ -39,21 +39,21 @@ ENV PYSPARK_DRIVER_PYTHON=$CONDA_DIR/envs/python2/bin/jupyter
 ENV PYSPARK_DRIVER_PYTHON_OPTS="notebook --no-browser"
 
 #Ship some data for workshop
-#COPY data $HOME/work/data/
-#COPY 00_welcome.ipynb $HOME/work/
+COPY data $HOME/spark-tutorial/data
+COPY notebooks $HOME/spark-tutorial/notebooks 
 
 # Install pyspark kernel
-COPY pyspark /tmp/pyspark/
+COPY docker/pyspark /tmp/pyspark/
 RUN $CONDA_DIR/envs/python2/bin/jupyter kernelspec install /tmp/pyspark/ --user
 
 USER root
 #COPY and ADD don't add as the current user https://github.com/docker/docker/issues/7390, https://github.com/docker/docker/pull/13600
-RUN chown jovyan:jovyan $HOME/work -R
+RUN chown jovyan:jovyan $HOME/* -R
 
 #SparkUI
 EXPOSE 4040
 
-COPY jupyter_notebook_config.py /etc/jupyter/
+COPY docker/jupyter_notebook_config.py /etc/jupyter/
 
 USER jovyan
 CMD ["/usr/local/spark/bin/pyspark"]
