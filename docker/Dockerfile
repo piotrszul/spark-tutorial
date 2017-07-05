@@ -34,9 +34,11 @@ RUN conda create --yes -p $CONDA_DIR/envs/python2 python=2.7 \
 
 #Prepare environment
 ENV SPARK_HOME /usr/local/spark
+ENV PATH $SPARK_HOME/bin:$PATH
 ENV PYSPARK_PYTHON=$CONDA_DIR/envs/python2/bin/python2.7
 ENV PYSPARK_DRIVER_PYTHON=$CONDA_DIR/envs/python2/bin/jupyter
 ENV PYSPARK_DRIVER_PYTHON_OPTS="notebook --no-browser"
+
 
 #Ship some data for workshop
 COPY data $HOME/spark-tutorial/data
@@ -56,4 +58,6 @@ EXPOSE 4040
 COPY docker/jupyter_notebook_config.py /etc/jupyter/
 
 USER jovyan
-CMD ["/usr/local/spark/bin/pyspark"]
+WORKDIR $HOME/spark-tutorial/notebooks
+
+CMD ["pyspark"]
