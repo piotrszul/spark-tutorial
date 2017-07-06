@@ -8,6 +8,8 @@ metastore_db
 set-env.sh
 output
 data.tar.gz
+tmp
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
