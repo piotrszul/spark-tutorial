@@ -69,15 +69,18 @@ You can navigate your browser not to: <http://localhost:8888/> to see the list o
 1. Open the `0.1_Welcome.ipynb` and run all the cells with `Cell\Run All` - it should run without errors (the and the output should be like [this](https://piotrszul.github.io/spark-tutorial/notebooks/0.1_Welcome.html)
 2. Please, have a look through the notebook to familiarize yourself with the different ways of using the notebook to run python code, shell commands and visualize the results.
 
-<font color='red'>IMPORTANT:</font> 
+<font color='red'>*IMPORTANT*</font> 
 
 When you are done with the notebook close it with `File\Close and Halt`. Only one pyspark notebook may be running at any given time.
+
+<font color='red'>*IMPORTANT*</font> 
+
 
 To stop the `jupyter` server press `[Ctrl+C]` twice at the console window.
 
 You can start it again at any time with the `docker run ...` command above.
 
-_NOTE: Every time you use  `docker run ...`  the server will start from the clean image, without any changes that you might have made. If you want to preserve your changes use the --name option when you run the server for the first time and then `start` command to connect to it, e.g.: _
+_NOTE: Every time you use_ `docker run ...` _the server will start from the clean image, without any changes that you might have made. If you want to preserve your changes use the --name option when you run the server for the first time and then_ `start` _command to connect to it, e.g.: _
 
     # run a server (container) named `my-server` for the first time:
     
@@ -88,7 +91,7 @@ _NOTE: Every time you use  `docker run ...`  the server will start from the clea
     
     docker start -i 'my-server'
     
-_NOTE: Please not that the  `piotrszul/spark-tutorial` image is under active development so please make sure you update is on the day of the workshop. The update is incremental so the download size will be small)_
+_NOTE: Please not that the_ `piotrszul/spark-tutorial` _image is stil under active development so please make sure you update (pull) it on the day of the workshop. The update is incremental so the download size not exceed 100MB)_
 
  
 
