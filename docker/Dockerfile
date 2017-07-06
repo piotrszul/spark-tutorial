@@ -40,10 +40,6 @@ ENV PYSPARK_DRIVER_PYTHON=$CONDA_DIR/envs/python2/bin/jupyter
 ENV PYSPARK_DRIVER_PYTHON_OPTS="notebook --no-browser"
 
 
-#Ship some data for workshop
-COPY data $HOME/spark-tutorial/data
-COPY notebooks $HOME/spark-tutorial/notebooks 
-
 # Install pyspark kernel
 COPY docker/pyspark /tmp/pyspark/
 RUN $CONDA_DIR/envs/python2/bin/jupyter kernelspec install /tmp/pyspark/ --user
@@ -58,6 +54,5 @@ EXPOSE 4040
 COPY docker/jupyter_notebook_config.py /etc/jupyter/
 
 USER jovyan
-WORKDIR $HOME/spark-tutorial/notebooks
 
 CMD ["pyspark"]

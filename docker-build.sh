@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t pyspark -f docker/Dockerfile .
+docker build -t spark-tutorial -f docker/Dockerfile.spark-tutorial .
