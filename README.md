@@ -58,7 +58,25 @@ To verify that the setup if correct and run you first tutorial notebook:
 2. `Run All` the notebook - it should run without errors (the and the output should be like [this](https://piotrszul.github.io/spark-tutorial/databricks/0.1_Welcome.html)
 3. Please, have a look through the notebook to familiarize yourself with different ways of using the notebook to: run python code, shell commands and visualize the results. 
 
-To run the rest of the tutorial follow the steps above for other notebooks in the `notebooks` directory.
+To run the rest of the tutorial follow the steps above for other notebooks in the `notebooks` directory. 
+
+Here are the URLs to copy:
+
+
+* [1.1_RDD-Basics.ipynb](https://raw.githubusercontent.com/piotrszul/spark-tutorial/master/notebooks/1.1_RDD-Basics.ipynb)
+* [1.2_RDD_Data-Processing.ipynb](https://raw.githubusercontent.com/piotrszul/spark-tutorial/master/notebooks/1.2_RDD_Data-Processing.ipynb)
+* [1.3_RDD_Text-Processing.ipynb](https://raw.githubusercontent.com/piotrszul/spark-tutorial/master/notebooks/1.3_RDD_Text-Processing.ipynb)
+* [2.1_StructuredData-Introduction.ipynb](https://raw.githubusercontent.com/piotrszul/spark-tutorial/master/notebooks/2.1_StructuredData-Introduction.ipynb)
+* [2.2_StructuredData-Formats.ipynb](https://raw.githubusercontent.com/piotrszul/spark-tutorial/master/notebooks/2.2_StructuredData-Formats.ipynb)
+* [2.3_StructuredData-Analyzing.ipynb](https://raw.githubusercontent.com/piotrszul/spark-tutorial/master/notebooks/2.3_StructuredData-Analyzing.ipynb)
+* [3.1_ML-Introduction.ipynb](https://raw.githubusercontent.com/piotrszul/spark-tutorial/master/notebooks/3.1_ML-Introduction.ipynb)
+* [3.2_ML_Classification-Text.ipynb](https://raw.githubusercontent.com/piotrszul/spark-tutorial/master/notebooks/3.2_ML_Classification-Text.ipynb)
+* [3.3_ML_Classification-Categorical.ipynb](https://raw.githubusercontent.com/piotrszul/spark-tutorial/master/notebooks/3.3_ML_Classification-Categorical.ipynb)
+* [4.1_SparkR-Introduction.html](https://raw.githubusercontent.com/piotrszul/spark-tutorial/master/R/4.1_SparkR-Introduction.html)
+* [5.1_BigData_Genomics-Clustering.ipynb](https://raw.githubusercontent.com/piotrszul/spark-tutorial/master/notebooks/5.1_BigData_Genomics-Clustering.ipynb)
+* [5.2_BigData_Genomics_Visualise.ipynb](https://raw.githubusercontent.com/piotrszul/spark-tutorial/master/notebooks/5.2_BigData_Genomics_Visualise.ipynb)
+
+
 
 ### Running locally with Docker
 
