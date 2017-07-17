@@ -132,3 +132,8 @@ _NOTE: Every time you use_ `docker run ...` _the server will start from the clea
     
 _NOTE: Please note that the_ `piotrszul/spark-tutorial` _image is still under active development, so please make sure you update (pull) it on the day of the workshop. The update is incremental so the download size should not exceed 100MB)_
 
+### Look at HTML version
+
+Just go [https://piotrszul.github.io/spark-tutorial/](https://piotrszul.github.io/spark-tutorial/).
+
+
