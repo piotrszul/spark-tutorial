@@ -36,13 +36,12 @@ RUN conda create --yes -p $CONDA_DIR/envs/python2 python=2.7 \
 ENV SPARK_HOME /usr/local/spark
 ENV PATH $SPARK_HOME/bin:$PATH
 ENV PYSPARK_PYTHON=$CONDA_DIR/envs/python2/bin/python2.7
-ENV PYSPARK_DRIVER_PYTHON=$CONDA_DIR/envs/python2/bin/jupyter
-ENV PYSPARK_DRIVER_PYTHON_OPTS="notebook --no-browser"
-
 
 # Install pyspark kernel
 COPY docker/pyspark /tmp/pyspark/
 RUN $CONDA_DIR/envs/python2/bin/jupyter kernelspec install /tmp/pyspark/ --user
+
+COPY docker/ipyspark /usr/local/bin/ipyspark
 
 USER root
 #COPY and ADD don't add as the current user https://github.com/docker/docker/issues/7390, https://github.com/docker/docker/pull/13600
@@ -55,4 +54,4 @@ COPY docker/jupyter_notebook_config.py /etc/jupyter/
 
 USER jovyan
 
-CMD ["pyspark"]
+CMD ["ipyspark"]
