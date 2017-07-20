@@ -13,4 +13,3 @@ RUN chown jovyan:jovyan $HOME/spark-tutorial -R
 USER jovyan
 WORKDIR $HOME/spark-tutorial/notebooks
 
-CMD ["pyspark"]
