@@ -136,4 +136,29 @@ _NOTE: Please note that the_ `piotrszul/spark-tutorial` _image is still under ac
 
 Just go [https://piotrszul.github.io/spark-tutorial/](https://piotrszul.github.io/spark-tutorial/).
 
+### References
+
+All data sets used in this tutorial are described in [data/README.md](data/README.md)
+
+[Apache Spark](http://spark.apache.org/):
+
+- [Python API Docs](http://spark.apache.org/docs/latest/api/python/index.html)
+- [Spark Programming Guide](http://spark.apache.org/docs/latest/rdd-programming-guide.html)
+- [Spark SQL Programming Guide](http://spark.apache.org/docs/latest/sql-programming-guide.html)
+- [Spark ML Programming Guide](http://spark.apache.org/docs/latest/ml-guide.html)
+- [Spark R Programming Guide](http://spark.apache.org/docs/latest/sparkr.html)
+
+[Google Cloud](https://cloud.google.com/)
+    
+- [Public Datasets](https://cloud.google.com/public-datasets/)
+- [1000 Genomes Public Dataset](http://googlegenomics.readthedocs.io/en/latest/use_cases/discover_public_data/1000_genomes.html)
+    
+Other interesting sites:
+
+- [Kaggle](https://www.kaggle.com/) - data science competitions with (sometime huge) prizes + interesting data sets
+- [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/index.php) - many interesting machine learning data sets 
+    
+
+
+
 
