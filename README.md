@@ -136,6 +136,12 @@ _NOTE: Please note that the_ `piotrszul/spark-tutorial` _image is still under ac
 
 Just go [https://piotrszul.github.io/spark-tutorial/](https://piotrszul.github.io/spark-tutorial/).
 
+### Running the on big data on Google Cloud
+
+The [5.1_BigData_Genomics-Clustering.ipynb](https://raw.githubusercontent.com/piotrszul/spark-tutorial/master/notebooks/5.1_BigData_Genomics-Clustering.ipynb) example can be run on the entire chromosome 22 data (or potentially the entire genome) with Google Cloud  `Dataproc` service. 
+
+The instruction is available in [google-cloud/README.md](google-cloud/README.md)
+
 ### References
 
 All data sets used in this tutorial are described in [data/README.md](data/README.md)
